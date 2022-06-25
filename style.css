@@ -192,9 +192,8 @@ footer {
 }
 
 .Project_itemBox {
-
-    border-top: solid 3px;
-    border-bottom: solid 3px;
+    border-radius: 3%;
+    border: solid 2px;
     border-color: #9e9e9e;
 
     width: 320px;
@@ -336,7 +335,6 @@ footer {
 
     .Project_itemBox {
         margin-bottom: 30px;
-        border-radius: 3%;
     }
 
     .project_img img {
