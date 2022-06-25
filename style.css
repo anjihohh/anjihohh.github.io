@@ -86,10 +86,7 @@ footer {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
-}
-
-.profile_contents {
-    margin: 10px 10px 10px 50px;
+    justify-content: space-around;
 }
 
 #profile_contents_detail {
@@ -121,6 +118,8 @@ footer {
     justify-content: center;
 }
 
+
+
 .graph img {
     width: 660px;
     height: 100px;
@@ -128,14 +127,9 @@ footer {
 
 .about-content {
     margin-top: 20px;
-    margin-left: 20px;
     display: flex;
     flex-direction: row;
-}
-
-.about-content .content_right {
-    margin-left: 180px;
-    margin-right: 200px;
+    justify-content: space-around;
 }
 
 .about-content li {
@@ -145,10 +139,11 @@ footer {
 .Archiving_flex {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .Archiving_flex img {
-    width: 330px;
+    width: 320px;
     height: 230px;
     border-radius: 5%;
     overflow: hidden;
@@ -163,10 +158,6 @@ footer {
 .Archiving_flex li {
     margin-bottom: 10px;
     overflow: hidden;
-}
-
-.Archiving_flex .Archiving_blog {
-    margin-left: 60px;
 }
 
 .ProjectList_flexBox {
@@ -192,4 +183,143 @@ footer {
 
 .Project_itemBox h3 {
     padding-left: 30px;
+}
+
+.project_img img {
+    width: 690px;
+}
+
+.list_box {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.listflex_box {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.listflex_box .label {
+    width: 150px;
+}
+
+.text {
+    white-space: normal;
+}
+
+@media (max-width: 1100px) {
+    body {
+        display: flow-root;
+        grid-template-columns: 1fr 1160px 1fr;
+    }
+
+    .container {
+        display: flow-root;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    footer {
+        height: 150px;
+    }
+
+    main {
+        padding: 10px 30px 10px 30px;
+        background-color: #f0f4c3;
+    }
+
+    .graph {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .graph img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .graph_flex {
+        padding-left: 80px;
+    }
+
+    .Archiving_flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ProjectList_flexBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .text {
+        width: 690px;
+    }
+}
+
+@media (max-width: 770px) {
+    .Archiving_flex {
+        display: flow-root;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ProjectList_flexBox {
+        padding-bottom: 0px;
+        display: flow-root;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Project_itemBox {
+        margin-bottom: 30px;
+        background-color: #519657;
+        border-radius: 3%;
+    }
+
+    .project_img img {
+        width: 100%;
+    }
+
+    .listflex_box {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        white-space: normal;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .graph img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .graph_flex {
+        padding-left: 0px;
+    }
 }
