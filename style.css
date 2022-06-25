@@ -5,6 +5,14 @@ body {
     white-space: nowrap;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
 ul,
 ol {
     list-style: none;
